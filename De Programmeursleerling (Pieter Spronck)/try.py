@@ -1,6 +1,2 @@
-from pcinput import getInteger
-
-num1 = getInteger( "Please enter an integer: " )
-num2 = getInteger( "Please enter another integer: " )
-
-print( "The sum of", num1, "and", num2, "is", num1 + num2 )
+c = pow(3.0, 2) + pow(4.0, 2)
+print(c)

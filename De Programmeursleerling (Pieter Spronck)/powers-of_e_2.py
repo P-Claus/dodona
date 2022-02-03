@@ -1,0 +1,5 @@
+print('e ** -1 = {:>8.5f}'.format(0.36788))
+print('e **  0 = {:>8.5f}'.format(1.00000))
+print('e **  1 = {:>8.5f}'.format(2.71828))
+print('e **  2 = {:>8.5f}'.format(7.38906))
+print('e **  3 = {:>8.5f}'.format(20.08554))

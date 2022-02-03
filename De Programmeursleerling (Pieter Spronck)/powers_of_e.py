@@ -1,0 +1,12 @@
+e = float(input('Please enter a number: '))
+result_1 = pow(e, -1)
+result_2 = pow(e, 0)
+result_3 = pow(e, 1)
+result_4 = pow(e, 2)
+result_5 = pow(e, 3)
+
+print('{} ** -1 = {:>8.5f}'.format(e, result_1))
+print('{} **  0 = {:>8.5f}'.format(e, result_2))
+print('{} **  1 = {:>8.5f}'.format(e, result_3))
+print('{} **  2 = {:>8.5f}'.format(e, result_4))
+print('{} **  3 = {:>8.5f}'.format(e, result_5))

@@ -9,4 +9,4 @@ elif numeric_grade >= 70:
 elif numeric_grade >= 60:
     print('D')
 else:
-    print('F)')
+    print('F')

@@ -1,18 +1,11 @@
 from pcinput import getInteger
 
 number = getInteger('Enter a number: ')
-result = number - 1
-count = 0
-total = 0 
+total = number * (number - 1)
+number -= 1
 
-while count == number:
-    total += (number * result)
-    result -= 1
-    count += 1
-
-while count != number:
-    total *= result
-    result -= 1
-    count += 1
+while number > 1:
+    total = total * (number - 1) 
+    number -= 1
 
 print(total)

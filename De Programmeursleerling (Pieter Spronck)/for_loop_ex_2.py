@@ -7,4 +7,4 @@ for x in range(5):
     total += number
 
 print(total)
-print('Done)')
+print('Done')

@@ -1,10 +1,7 @@
-def isEven():
-    even = 'is even'
-    uneven = 'is uneven'
-    num = int(input('Please enter a number: '))
+def isEven(num):
     if num % 2 == 0:
-        return num(even)
+        return True
     else:
-        return num(uneven)
-
-print(isEven())
+        return False
+    
+print(isEven(2))

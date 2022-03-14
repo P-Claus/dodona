@@ -1,9 +1,4 @@
-fruit = "apple"
-
-def changeFruit():
-    global fruit
-    fruit = "banana"
-
-print( fruit )
-changeFruit()
-print( fruit )
+s = "    And now for something completely different \n    "
+print( "["+s+"]" )
+s = s.strip()
+print( "["+s+"]" )

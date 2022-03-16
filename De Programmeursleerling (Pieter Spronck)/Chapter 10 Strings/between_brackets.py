@@ -4,8 +4,11 @@ new_word = ''
 bracket = '['
 
 while x < len(text):
-    left_bracket = text.index('[', x)
-    right_bracket = text.index(']')
-
-    print(text[left_bracket:right_bracket])
+    if text[x] == bracket:
+        left_bracket = text.find('[', x)
+        right_bracket = text.find(']', x)
+        new_word += text[left_bracket:right_bracket].strip('[')
+        #print(text[left_bracket:right_bracket])
     x += 1
+
+print(new_word)

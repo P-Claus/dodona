@@ -1,16 +1,9 @@
-text = 'How much wood would a woodchuck chuck if a woodchuck could chuck wood? He would chuck, he would, as much as he could, and chuck as much as a woodchuck would If a woodchuck could chuck wood.'
-dict = {}
-s = text
+movies_dict = {'Monty Python and the Holy Grail': (9, 10, 9.5, 8.5, 3, 7.5, 8), 
+"Monty Python's Life of Brian": (10, 10, 0, 9, 1, 8, 7.5, 8, 6, 9), 
+"Monty Python's Meaning of Life": (7, 6, 5),
+'And Now For Something Completely Different': (6, 5, 6, 6)}
 
-x = s.lower()
-n = x.split()
-
-for wrd in n:
-    o = wrd.strip('?,.')
-    if o in dict:
-        dict[o] += 1 
-    else:
-        dict[o] = 1
-
-print(dict)
-
+for key in movies_dict.keys():
+    for value in movies_dict[key]:
+        rating = sum(value)/len(value)
+    print(rating)

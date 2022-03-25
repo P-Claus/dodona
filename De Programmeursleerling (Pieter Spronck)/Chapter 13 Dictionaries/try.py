@@ -4,6 +4,7 @@ movies_dict = {'Monty Python and the Holy Grail': (9, 10, 9.5, 8.5, 3, 7.5, 8),
 'And Now For Something Completely Different': (6, 5, 6, 6)}
 
 for key in movies_dict.keys():
-    for value in movies_dict[key]:
-        rating = sum(value)/len(value)
-    print(rating)
+    avg = sum(movies_dict[key])/len(movies_dict[key])
+    movies_dict[key] = avg
+print(movies_dict)
+

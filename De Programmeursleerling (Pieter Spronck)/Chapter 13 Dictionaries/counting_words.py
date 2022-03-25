@@ -1,12 +1,13 @@
 
 def word_count(s):
-    s_lower = s.lower()
-    s_strip = s_lower.strip('?,.')
-    s_split = s_strip.split()
-    dict = {}  
-    for word in s_split:
-        if word in dict:
-            dict[word] += 1 
+    dict = {}
+    x = s.lower()
+    n = x.split()
+
+    for wrd in n:
+        o = wrd.strip('?,.')
+        if o in dict:
+            dict[o] += 1 
         else:
-            dict[word] = 1
+            dict[o] = 1
     return dict

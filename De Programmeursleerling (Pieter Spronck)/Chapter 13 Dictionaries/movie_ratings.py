@@ -8,9 +8,8 @@ def list2dict(s):
     return movies_dict
 
 def average_rating(s):
-    for value in s.values():
-        value = sum(value)/len(value)
-        return value
+    for key in s.keys():
+        avg = sum(s[key])/len(s[key])
+        s[key] = avg
+    return s
    
-list2dict(movies_list)
-average_rating(movies_dict)

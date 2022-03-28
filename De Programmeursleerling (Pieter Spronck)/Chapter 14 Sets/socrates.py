@@ -3,18 +3,16 @@ men = {'Socrates', 'Plato', 'Eratosthenes'}
 mortals = {'Socrates', 'Plato', 'Eratosthenes', 'Cat', 'Dog'}
 
 
-#D part
-setintersection = things.intersection(mortals)
-print(setintersection.issubset(men))
 
-#E part
-print(mortals.issuperset(men))
+A = men.issubset(mortals)
+#B
+if 'Socrates' in men:
+    print(True)
+#C
+if 'Socrates' in men and mortals:
+    print(True)
+#D
+D = things.intersection(mortals)
+D = D.isdisjoint(men)
 
-#
-#A = socratesintersection
-#B = 
-#C =
-#D =
-#E =
-
-#print(D)
+E = mortals.issuperset(men)

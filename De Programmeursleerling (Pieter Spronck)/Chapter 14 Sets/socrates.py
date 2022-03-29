@@ -12,7 +12,7 @@ if 'Socrates' in men:
 if 'Socrates' in men and mortals:
     print(True)
 #D
-D = things.intersection(mortals)
-D = D.isdisjoint(men)
+D = things.intersection(mortals).isdisjoint(men)
+
 
 E = mortals.issuperset(men)
